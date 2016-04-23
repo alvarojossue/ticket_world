@@ -1,0 +1,58 @@
+<div class="row">
+<div class="col-sm-4">
+</div>
+<div class="col-sm-4" style=" text-align: center;">
+<h1>Add a new concert</h1>
+	<br>
+<%= form_for @my_concert do |f| %>
+	<div>
+		<%= f.label :artist %>
+	</div>
+	<div>
+		<%= f.text_field :artist, placeholder: "Michael Jackson" %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :venue %>
+	</div>
+	<div>
+		<%= f.text_field :venue, placeholder: "AAA" %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :city %>
+	</div>
+	<div>
+		<%= f.text_field :city, placeholder: "Miami" %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :date %>
+	</div>
+	<div>
+		<%= f.datetime_local_field :date, placeholder: "" %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :price %>
+	</div>
+	<div>
+		<%= f.number_field :price, placeholder: "100" %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :description %>
+	</div>
+	<div>
+		<%= f.text_field :description, placeholder: "King of Pop" %>
+	</div>
+	<br>
+	<br>
+	<div>
+		<%= f.button %>
+	</div>
+<% end %>
+</div>
+<div class="col-sm-4">
+</div>
+</div>

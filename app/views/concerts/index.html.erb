@@ -1,0 +1,27 @@
+
+<div class="row" style="padding-left: 48px;">
+	<div class="col-sm-4">
+		<h2>Today's concerts:</h2>
+			<ul>
+				<% @concerts_today.each do |concert| %>
+					<li> <%= link_to "#{concert.artist}", "/concerts/#{concert.id}" %> </li>
+				<% end %>
+			</ul>
+	</div>
+	<div class="col-sm-4">
+		<h2>Upcoming concerts:</h2>
+			<ul>
+				<% @concerts_month.each do |concert| %>
+					<li> <%= link_to "#{concert.artist}", "/concerts/#{concert.id}" %> </li>
+				<% end %>
+			</ul>
+	</div>
+	<div class="col-sm-4">
+		<h2>Featured concerts:</h2>
+			<ul>
+				<% @concerts_featured.each do |concert| %>
+					<li> <%= link_to "#{concert.artist}", "/concerts/#{concert.id}" %> </li>
+				<% end %>
+			</ul>
+	</div>
+</div>
