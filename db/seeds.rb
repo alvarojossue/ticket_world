@@ -4,3 +4,5 @@ concert_2 = Concert.create(artist: "Daddy Yankee", venue: "Bank of America Cente
 concert_3 = Concert.create(artist: "Don Omar", venue: "American Airlines Arena", city: "Miami", date: Date.today + 1.week, price: 110, description: "Few have done more to bring Reggaeton to mass audiences than Puerto Rico's Don Omar.")
 concert_4 = Concert.create(artist: "Rihanna", venue: "American Airlines Arena", city: "Miami", date: Date.today + 2.week, price: 150, description: "Rihanna is nothing if not prolific.")
 concert_5 = Concert.create(artist: "Michael Jackson", venue: "American Airlines Arena", city: "Miami", date: Date.today + 3.week, price: 200, description: "King of Pop")
+
+concert_1.comments.create(name: "Alvaro", date: Date.today, comment: "Buenisimo")

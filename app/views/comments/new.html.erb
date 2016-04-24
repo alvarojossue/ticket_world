@@ -1,0 +1,36 @@
+<div class="row">
+<div class="col-sm-4">
+</div>
+<div class="col-sm-4" style=" text-align: center;">
+<h1>Add a new comment</h1>
+	<br>
+<%= form_for [@the_concert, @the_comment] do |f| %>
+	<div>
+		<%= f.label :name %>
+	</div>
+	<div>
+		<%= f.text_field :name, placeholder: "Sarah Abogabir" %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :date %>
+	</div>
+	<div>
+		<%= f.datetime_local_field :date %>
+	</div>
+	<br>
+	<div>
+		<%= f.label :comment %>
+	</div>
+	<div>
+		<%= f.text_field :comment, placeholder: "Awesome concert" %>
+	</div>
+	<br>
+	<div>
+		<%= f.button %>
+	</div>
+<% end %>
+</div>
+<div class="col-sm-4">
+</div>
+</div>

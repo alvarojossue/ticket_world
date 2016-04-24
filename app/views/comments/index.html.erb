@@ -1,0 +1,14 @@
+<div style="padding-left: 25px;">
+	<h1><%= @the_concert.artist %></h1>
+		<ul>
+			<% @the_comments.each do |com| %>
+				<li>
+					<%= com.name %>
+					<br>
+					<%= com.date.strftime("%d %B, %y") %>
+					<br>
+					<%= com.comment %>
+				</li>
+			<% end %>
+		</ul>
+</div>

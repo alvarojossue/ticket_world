@@ -5,4 +5,7 @@
 	<p><strong>Date: </strong> <%= @my_concert.date %></p>
 	<p><strong>Price: $</strong> <%= @my_concert.price %></p>
 	<p><strong>Description: </strong> <%= @my_concert.description %></p>
+	<br>
+	<a class="btn btn-success" href="/concerts/<%= @my_concert.id %>/comments" role="button">See Comments</a>
+	<a class="btn btn-success" href="/concerts/<%= @my_concert.id %>/comments/new" role="button">Add New Comment</a>
 </div>

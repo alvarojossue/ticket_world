@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  resources :concerts 
-  get '/', to: 'concerts#index' 
+  resources :concerts do
+  	resources :comments
+  end
 end

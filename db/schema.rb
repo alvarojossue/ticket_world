@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160423204411) do
     t.text     "name"
     t.datetime "date"
     t.text     "comment"
+    t.integer  "concert_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
