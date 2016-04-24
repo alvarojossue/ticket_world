@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag "concert_nation.css" %>
 </head>
 <body>
-	<header>
+<div id="wrapper">
+
+	<div id="header">
 		<div class="jumbotron" style="padding-left: 48px;">
 			<h1 class="display-3">Concert Nation</h1>
 			<p class="lead">Find the best concerts around your area.</p>
@@ -21,14 +24,16 @@
 				<a class="btn btn-primary btn-lg" href="/concerts/new" role="button">Add new concert</a>
 			</p>
 		</div>
-	</header>
-	<%= yield %>
-	<div style="height: 150px;">
-		
 	</div>
-	<footer style="position: fixed; height: 60px; bottom: 0; width: 100%; background-color: #337ab7; color: white; ">
-		<p style="text-align: center; margin-top: 20px">Developed with love at Ironhack</p>
-	</footer>
+	<div id="content"> 
+	<%= yield %>
+	<div style="height: 70px;"></div>
+	</div>
+
+	<div id="footer">
+		<p id="footer_text">Developed with love at Ironhack</p>
+	</div>
+</div>
 </body>
 
 </html>
